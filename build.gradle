@@ -1,0 +1,21 @@
+plugins {
+    id "java"
+}
+
+group "ua.ilyadreamix.amino"
+version "1.0"
+
+dependencies {
+    implementation platform(okhttp3.bom)
+    implementation okhttp3.okhttp
+    implementation okhttp3.logging.interceptor
+
+    implementation hash.commons.codec
+    implementation hash.commons.lang
+
+    implementation json.gson
+}
+
+repositories {
+    mavenCentral()
+}
